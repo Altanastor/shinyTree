@@ -16,6 +16,6 @@ shinyUI(
       "Currently Selected:",
       verbatimTextOutput("selTxt"),
       hr(),
-      shinyTree("tree")
+      shinyTree("tree",checkbox = TRUE)
     )
   ))

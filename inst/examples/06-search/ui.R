@@ -16,6 +16,7 @@ shinyUI(
     ),
     mainPanel(
       # Show a simple table.
-      shinyTree("tree", search=TRUE)
+      shinyTree("tree", search=TRUE,checkbox = TRUE),
+      shiny::textOutput("treedata")
     )
   ))

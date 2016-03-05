@@ -10,5 +10,12 @@ shinyServer(function(input, output, session) {
   
   output$tree <- renderTree({
     texasCi
+    
   })
+  
+  output$treedata <- renderText({
+    as.vector(input$tree)
+    
+  }) 
+  
 })
