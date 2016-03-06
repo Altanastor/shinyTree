@@ -15,7 +15,7 @@ shinyUI(
     mainPanel(
       # Show a simple table.
       shiny::verbatimTextOutput("vars"),
-      shinyTree("tree", checkbox = TRUE)
+      shinyTree("tree",search=TRUE, checkbox = TRUE)
       
   ))
 )
